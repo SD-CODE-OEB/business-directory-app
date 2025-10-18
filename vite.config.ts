@@ -52,7 +52,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      injectRegister: false, // we'll register '/sw.js' manually in Client.tsx
+      injectRegister: "auto", // we'll register '/sw.js' manually in Client.tsx
       manifestFilename: "manifest.webmanifest", // standard filename with correct MIME on most hosts
       includeAssets: ["bzlogo.jpg", "shot1.png", "shot2.png"],
       manifest: pwaManifest,
