@@ -1,12 +1,12 @@
-import BusinessDirectory from "./components/BusinessDirectory"
-import { ThemeProvider } from "./contexts/ThemeContext"
+import BusinessDirectory from "./components/BusinessDirectory";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
     <ThemeProvider>
       <BusinessDirectory />
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
