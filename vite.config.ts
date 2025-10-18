@@ -52,8 +52,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      injectRegister: false, // keep your manual SW registration in Client.tsx
-      manifestFilename: "web.manifest", // match <link rel="manifest" href="/web.manifest" />
+      injectRegister: false, // we'll register '/sw.js' manually in Client.tsx
+      manifestFilename: "manifest.webmanifest", // standard filename with correct MIME on most hosts
       includeAssets: ["bzlogo.jpg", "shot1.png", "shot2.png"],
       manifest: pwaManifest,
     }),
